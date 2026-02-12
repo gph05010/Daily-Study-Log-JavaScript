@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let box = Number(prompt("한 박스에 담을 오렌지 수를 입력해주세요."));
+        let orange = Number(prompt("현재 오렌지의 개수를 입력해주세요."));
+
+        console.log(`한 박스에 담을 오렌지 수: ${box}`);
+        console.log(`현재 오렌지 개수: ${orange}`);
+        console.log(`필요한 박스의 수: ${orange % box > 0 ? (parseInt(orange / box) + 1) : (parseInt(orange / box))}`);
+        // console.log("필요한 박스의 수: " + (orange % box > 0 ? ... : ...)); 이렇게 할 경우, 삼항 연산자 밖에 꼭 괄호를 쳐 주어야 한다.
+        // + 연산자가 삼항 연산자, 비교 연산자보다 우선순위가 높다. 그래서...
+        // 괄호를 사용하지 않는다면, 문자열과 더해서 문자열이 된 채로 비교 연산을 수행해 false
+        // 그래서 삼항 연산자의 false 실행문이 나와버리게 된다.
+    </script>
+</body>
+</html>

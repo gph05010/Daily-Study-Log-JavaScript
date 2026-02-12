@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let num = Number(prompt("숫자를 입력해주세요!"));
+
+        console.log(num % 2 === 0 ? num + '은(는) 짝수입니다.': num + '은(는) 홀수입니다.');
+
+        // 템플릿 문자열
+        // - 문자열 안에 변수를 사용할 수 있는 문법
+        // - 백틱(``)
+        // - 백틱 안에 변수를 사용해야 할 경우 ${변수명}으로 표기
+        console.log(num % 2 === 0 ? `${num}은(는) 짝수입니다.` : `${num}은(는) 홀수입니다.`);
+    </script>
+</body>
+</html>

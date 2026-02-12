@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let num1 = Number(prompt("첫 번째 숫자를 입력하세요"))
+        let num2 = Number(prompt("두 번째 숫자를 입력하세요"))
+
+        console.log("두 숫자를 더한 결과: " + (num1 + num2))
+        // num1 + num2에 괄호를 써주지 않으면, 앞에서부터 연산하는데,
+        // 문자열과 num1을 더하면 num1이 문자열로 자동 형변환된다.
+        // num2 또한 문자열로 자동 형변환되므로, 원하는 연산 결과가 나오지 않는다.
+        // 앞의 문자열과 더하지 말고, ,(콤마)로 이어붙이는 방법도 있다. 하지만 출력 결과가 안 예쁨.
+
+    </script>
+</body>
+</html>
