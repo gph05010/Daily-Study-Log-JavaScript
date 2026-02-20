@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 두 숫자와 연산자를 입력받아 결과를 출력하는 프로그램 구현하기
+        // op 변수에 +, -, *, / 기호가 아닌 것을 입력하면, alert 창으로 '연산 기호를 다시 입력하세요' 출력
+        
+        let num1 = Number(prompt('첫 번째 숫자 입력:'));
+        let num2 = Number(prompt('두 번째 숫자 입력:'));
+        let op = prompt('연산할 기호 입력:');
+
+        function calculate(num1, num2, op){
+            if(op === '+'){
+                console.log(num1 + num2);
+            }else if(op === '-'){
+                console.log(num1 - num2);
+            }else if(op === '*'){
+                console.log(num1 * num2);
+            }else if(op === '/'){
+                console.log(num1 / num2);
+            }else{
+                alert('사칙연산 기호가 아닙니다. 다시 입력하세요.');
+            }
+        }
+
+        calculate(num1, num2, op);
+    </script>
+</body>
+</html>

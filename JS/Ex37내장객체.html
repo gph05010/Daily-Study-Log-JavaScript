@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 내장객체
+        // JS에서 기본적으로 제공되는 라이브러리(객체)
+        let today = new Date();
+
+        let t_year = today.getFullYear();
+        let t_month = today.getMonth();
+        let t_date = today.getDate();
+        let t_day = today.getDay();
+
+        let days = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일']
+
+        let t_hour = today.getHours();
+        let t_minute = today.getMinutes();
+        let t_seconds = today.getSeconds();
+
+        console.log(`${t_year}년 ${t_month + 1}월 ${t_date}일 (${days[t_day]})`);
+        console.log(`${t_hour}시 ${t_minute}분 ${t_seconds}초`)
+    </script>
+</body>
+</html>
