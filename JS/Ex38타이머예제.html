@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // setInterval() 활용해서 타이머 프로그램 만들기!
+        // setInterval(실행할 함수, 시간(ms))
+        // 1000ms = 1초
+
+        // setInterval(function(){
+        //     console.log('1초마다 실행');
+        // }, 1000);
+
+        // while(true) vs setInterval()
+        // while(true){
+        //     console.log('1초마다 실행');
+        // }
+
+        // while -> 동기 방식 -> 내가 요청한 기능이 끝날 때까지 다음 작업을 할 수 없음
+        // JS 싱글스레드 -> 한 번 무한 반복에 들어가면 빠져나오지 못함 -> 브라우저가 멈춤
+
+        // setInterval() -> 비동기 방식 -> JS가 1초마다 이벤트가 일어날 수 있도록 예약만 해둠
+        // 메인 기능이 끝날 때마다 예약해 놓은 작업 실행
+
+        setInterval(function(){
+                    let today = new Date();
+                    let t_hour = today.getHours();
+                    let t_minute = today.getMinutes();
+                    let t_seconds = today.getSeconds();
+                    console.log(`${t_hour}시 ${t_minute}분 ${t_seconds}초`)
+        }, 1000);
+    </script>
+</body>
+</html>

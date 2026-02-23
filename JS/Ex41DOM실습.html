@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="count">0</h3>
+    <button onclick="increase()">증가</button>
+    <button onclick="decrease()">감소</button>
+
+    <script>
+        let countEl = document.getElementById('count');
+        let count_num = Number(count.innerText);
+
+        function increase(){
+            count_num++;
+            count.innerText = count_num;
+        }
+        function decrease(){
+            if(count_num >= 1){
+                count_num--;
+                count.innerText = count_num;
+            }
+        }
+    </script>
+</body>
+</html>
